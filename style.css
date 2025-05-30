@@ -1,23 +1,96 @@
-body {
+.body {
     margin: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #e6c8a1;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }
 
 .headerContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    background-color: #f8f9fa;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #704e36;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    padding: 0px 20px;
+    height: 60px;
+    color: #ffffff;
+    font-family: Impact,
+        Haettenschweiler,
+        'Arial Narrow Bold',
+        sans-serif;
+    ;
 }
 
-.navbar {
-    gap: 20px;
+@media screen and (min-width: 768px) {
+    .headerContainer {
+        padding: 0px 100px;
+
+    }
 }
 
-.speakers {
-    gap: 10px;
+
+
+
+.mainContainer {
     display: flex;
     flex-direction: column;
+    gap: 50px;
 }
 
+.eventContainer {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #D2BEA3;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    /* font-size: 75px; */
+}
+
+.eventContainer h1 {
+    margin: 20px 0px;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .eventContainer h1 {
+        font-size: 90px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .eventContainer h1 {
+        font-size: 120px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .eventContainer h1 {
+        font-size: 150px;
+    }
+}
+
+.eventContainer div {
+    color: #ffffff;
+}
+
+.aStyle {
+    text-decoration: none;
+    color: black;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+
+.backgroundImage {
+    background-image: url(./assets/img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
